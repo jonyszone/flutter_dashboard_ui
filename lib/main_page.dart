@@ -16,7 +16,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("SEO Xpate University"),
+        title: const Text("SEO Expate Bangladesh"),
       ),
       backgroundColor: const Color(0xFFF0F0F0),
       bottomNavigationBar: BottomNavigationBar(
@@ -40,6 +40,6 @@ class _MainPageState extends State<MainPage> {
   }
 
   getBodyWidget() {
-    return (_currentIndex == 0) ? const DashboardPage() : Container();
+    return (_currentIndex == 0) ? DashboardPage() : Container();
   }
 }

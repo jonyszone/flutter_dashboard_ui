@@ -68,6 +68,7 @@ flutter:
    - images/icons8-paint-roller.png
    - images/icons8-vacuum.png
    - images/icons8-window.png
+   - images/icons8-android.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
