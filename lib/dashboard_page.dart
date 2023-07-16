@@ -52,7 +52,7 @@ class DashboardPage extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Text(
                         services[index],
-                        style: const TextStyle(fontSize: 16, height: 1.2),
+                        style: const TextStyle(fontSize: 14, height: 1.2, fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       ),
                     ),
