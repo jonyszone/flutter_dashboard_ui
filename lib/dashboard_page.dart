@@ -40,7 +40,41 @@ class DashboardPage extends StatelessWidget {
           return GestureDetector(
             onTap: () {
               if (index == 0) {
-                print("Card 1 pressed!");
+                //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/mobile-app/',)));
+                return;
+              }
+              if (index == 1) {
+                //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/web-design-and-development/',)));
+                return;
+              }
+              if (index == 2) {
+                //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/graphics-design/',)));
+                return;
+              }
+              if (index == 3) {
+                //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/digital-marketing/',)));
+                return;
+              }
+              if (index == 4) {
+                //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/mobile-app/',)));
+                return;
+              }
+              if (index == 5) {
+                //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/mobile-app/',)));
+                return;
+              }
+              if (index == 6) {
+                //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/mobile-app/',)));
+                return;
+              }
+              if (index == 7) {
                 //toast(msg: "msg");
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/mobile-app/',)));
                 return;
