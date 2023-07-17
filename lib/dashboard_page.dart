@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DashboardPage extends StatelessWidget {
-  DashboardPage({super.key});
+  DashboardPage({Key? key}) : super(key: key);
 
   var services = [
     "Mobile App Development Services",
@@ -29,13 +29,21 @@ class DashboardPage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8),
       child: GridView.builder(
-          itemCount: services.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: MediaQuery.of(context).size.width /
-                  (MediaQuery.of(context).size.height / 2.4)),
-          itemBuilder: (BuildContext context, int index) {
-            return Card(
+        itemCount: services.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: MediaQuery.of(context).size.width /
+              (MediaQuery.of(context).size.height / 2.4),
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return GestureDetector(
+            onTap: () {
+              if (index == 1) {
+                print("Card 1 pressed!");
+                //toast(msg: "msg");
+              }
+            },
+            child: Card(
               child: Column(
                 children: <Widget>[
                   const SizedBox(
@@ -52,15 +60,21 @@ class DashboardPage extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Text(
                         services[index],
-                        style: const TextStyle(fontSize: 14, height: 1.2, fontWeight: FontWeight.bold),
+                        style: const TextStyle(
+                          fontSize: 14,
+                          height: 1.2,
+                          fontWeight: FontWeight.bold,
+                        ),
                         textAlign: TextAlign.center,
                       ),
                     ),
                   )
                 ],
               ),
-            );
-          }),
+            ),
+          );
+        },
+      ),
     );
   }
 }
