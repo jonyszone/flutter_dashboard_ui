@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dashboard_ui/web_view.dart';
 
 class DashboardPage extends StatelessWidget {
   DashboardPage({Key? key}) : super(key: key);
@@ -38,9 +39,11 @@ class DashboardPage extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
             onTap: () {
-              if (index == 1) {
+              if (index == 0) {
                 print("Card 1 pressed!");
                 //toast(msg: "msg");
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> WebView( url: 'https://seoexpate.com/mobile-app/',)));
+                return;
               }
             },
             child: Card(
